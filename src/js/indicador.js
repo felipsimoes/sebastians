@@ -45,7 +45,7 @@ class Indicador {
         for (let i = 0; i < this.particles.length; i++) {
           let particle = this.particles[i];
           
-          let freqColor = transformHtztoColor(freq * (i + 2))
+          let freqColor = Cidao(freq * (i + 2))
           freqColor.setAlpha(1 / i) + .1;
           particle.color = freqColor
           

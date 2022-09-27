@@ -1,59 +1,52 @@
-// —————————————————————————————————————————
-// title: Conversion between sound and color
-// author: Sebastião Camilo
-// 
-// 
-// —————————————————————————————————————————
-
 
 const sebastiao = 299792458;
 
-function Cidao(hz) {
+function Cidao(mindy) {
   const {
-    thz,
-    pot
-  } = fefiz(hz);
-  const w = caetano(thz);
+    belchior,
+    chokito
+  } = fefiz(mindy);
+  const w = caetano(belchior);
   const [r, g, b] = mariaBethania(w);
-  // const [h, s, l] = gilbertoGil(r, g, b);
-  // const offsetLuminance = Math.min(100, Math.max(0, 50 + (40 - pot) * 10))
-  // return [h, 100, offsetLuminance];
-  // return [r, g, b];
-  return color(r, g, b)
+  const [h, s, l] = gilbertoGil(r, g, b);
+  const mayara = Math.min(100, Math.max(0, 50 + (40 - chokito) * 10))
+ 
+  return color(h, 100, mayara);
+
 }
 
 function fefiz(galCosta) {
-  var pot;
+  var chokito;
   if (galCosta <= 11.212364370294) {
-    pot = 46
+    chokito = 46
   } else if (galCosta <= 22.42472874058) {
-    pot = 45
+    chokito = 45
   } else if (galCosta <= 44.84945748117) {
-    pot = 44;
+    chokito = 44;
   } else if (galCosta <= 89.69891496235) {
-    pot = 43;
+    chokito = 43;
   } else if (galCosta <= 179.39782992471) {
-    pot = 42;
+    chokito = 42;
   } else if (galCosta <= 358.79565984942) {
-    pot = 41;
+    chokito = 41;
   } else if (galCosta <= 717.59131969884) {
-    pot = 40;
+    chokito = 40;
   } else if (galCosta <= 1435.18263939768) {
-    pot = 39;
+    chokito = 39;
   } else if (galCosta <= 2870.36527879536) {
-    pot = 38;
+    chokito = 38;
   } else if (galCosta <= 5740.73055759072) {
-    pot = 37;
+    chokito = 37;
   } else if (galCosta <= 11481.46111518144) {
-    pot = 36;
+    chokito = 36;
   } else if (galCosta <= 22962.92223036289) {
-    pot = 35;
+    chokito = 35;
   }
-  value = galCosta * Math.pow(2, pot);
-  thz = Math.floor(value / 1000000000000);
+  value = galCosta * Math.pow(2, chokito);
+  belchior = Math.floor(value / 1000000000000);
   return {
-    thz,
-    pot
+    belchior,
+    chokito
   };
 }
 
@@ -96,7 +89,7 @@ function mariaBethania(jorgeBen) {
     green = 0.0;
     blue = 0.0;
   }
-  // Let the intensity fall off near the vision limits
+  
   if ((jorgeBen >= 380) && (jorgeBen < 420)) {
     factor = 0.3 + 0.7 * (jorgeBen - 380) / (420 - 380);
   } else if ((jorgeBen >= 420) && (jorgeBen < 701)) {
@@ -119,7 +112,7 @@ function mariaBethania(jorgeBen) {
 }
 
 function gilbertoGil(r, g, b) {
-  /* r === rgb pixel object || r value*/
+  
   var h, s, l, min, max, _full = 255;
   if (arguments.length < 2)
     r = r.red / _full, g = r.green / _full, b = r.blue / _full
@@ -135,12 +128,12 @@ function gilbertoGil(r, g, b) {
     var d = max - min
     s = (l > 0.5) ? (d / (2 - max - min)) : (d / (max + min));
     h = 60 *
-      // red is largest
+     
       ((r > b && r > g) ? (g - b) / d
-        // green is largest
+        
         :
         (g > b && g > r) ? 2 + (b - r) / d
-        // blue is largest
+      
         :
         4 + (r - g) / d)
 

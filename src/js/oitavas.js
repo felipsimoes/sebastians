@@ -91,7 +91,7 @@ for (let i = 0; i < oitavas.length; i++) {
 //       // de oitava para ocupar toda a largura
 //       let freq = map(x, 0, width, rowObj.min, rowObj.max);
       
-//       let clr = transformHtztoColor(freq);
+//       let clr = Cidao(freq);
       
 //       if (!isNewRow) {
 //         r = clr[0];
@@ -153,7 +153,7 @@ function getSpectrum() {
       // de oitava para ocupar toda a largura
       let freq = map(x, 0, spectrum.width, rowObj.min, rowObj.max);
       
-      let clr = transformHtztoColor(freq);
+      let clr = Cidao(freq);
       
       if (!isNewRow) {
         r = clr[0];
