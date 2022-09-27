@@ -158,7 +158,7 @@ function getModulo(freq) {
   for (oitava of oitavas) {
     if (freq > oitava.min && freq < oitava.max) {
       // cor
-      var clr = transformHtztoColor(freq);
+      var clr = Cidao(freq);
       // fill(clr);
       
       // posição
