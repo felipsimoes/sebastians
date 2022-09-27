@@ -38,9 +38,6 @@ function setup() {
   background(0);
   noStroke();
  
-  
- 
-
   modulo = {
     x: 0,
     y: 0,
@@ -86,7 +83,7 @@ function draw() {
 
     fill(255, 0.2);
     textSize(13)
-    textFont("elza-light")
+    textFont("Elza")
     textAlign(CENTER, CENTER);
     text("h = série harmônica  |  ↑ ↓ = ver caminho", width/2, height * 0.98)
 
@@ -95,11 +92,11 @@ function draw() {
     //fill(255)
     textAlign(CENTER, CENTER);
 
-    textFont("elza-thin");
+    textFont("Elza");
     if (dist (width / 2, height * 0.45 ,mouseX,mouseY) < 100)
     {fill(255, 255, 255, 0.04);
     //hover
-    textFont("elza-light");
+    textFont("Elza");
     ellipse (width * 0.43, height * 0.35, 30,30)
     ellipse (width * 0.44, height * 0.56, 50,50)
     ellipse (width * 0.57, height * 0.49, 10,10)
@@ -124,20 +121,21 @@ function draw() {
     text('clique para ver som', width / 2, height * 0.45,)
 
     textAlign(LEFT);
-    textFont("elza-medium");
+    textFont("Elza");
     textSize(25);
     text('SEBASTIÃO CAMILO | DESIGN GENERATIVO SONS E CORES ', 50, 50);
     
-    textFont("elza-extralight");
     textSize(20);
+    strokeWeight(200);
+    textFont("Elza");
     text('ola@sebastiaocamilo.com | @ _sebastiaocamilo', 50, 90)
 
     textAlign(CENTER, CENTER);
-    textFont("elza-thin");
+    textFont("Elza");
     textSize(25);
     rectMode(CENTER);
 
-    text('Todas as notas musicais que ouvimos tem sua própria afinação. \n \n Se elevarmos essa afinação até a velocidade da luz, encontraremos as cores que acontecem em cada nota. \n \n Qualquer som emitido é constituído por outros sons que vibram junto com ele. \n Essa sequência é chamada de série harmônica.', width/2, height * 0.75, 840);
+    text('Todas as notas musicais que ouvimos tem sua própria afinação. \n \n Se elevarmos essa afinação até a velocidade da luz, encontraremos as cores que acontecem em cada nota. \n \n Qualquer som emitido é constituído por outros sons que vibram junto com ele. \n Essa sequência é chamada de série harmônica.', width/2, height * 0.74, 840);
     
    // button.mousePressed(changeBG);
 
