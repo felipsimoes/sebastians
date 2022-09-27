@@ -85,7 +85,7 @@ function draw() {
     textSize(13)
     textFont("Elza")
     textAlign(CENTER, CENTER);
-    text("h = série harmônica  |  ↑ ↓ = ver caminho", width/2, height * 0.98)
+    text("Dê play na sua música favorita perto do mic      h = série harmônica  |  ↑ ↓ = ver caminho", width/2, height * 0.98)
 
   } else {
     push()
@@ -135,7 +135,7 @@ function draw() {
     textSize(25);
     rectMode(CENTER);
 
-    text('Todas as notas musicais que ouvimos tem sua própria afinação. \n \n Se elevarmos essa afinação até a velocidade da luz, encontraremos as cores que acontecem em cada nota. \n \n Qualquer som emitido é constituído por outros sons que vibram junto com ele. \n Essa sequência é chamada de série harmônica.', width/2, height * 0.74, 840);
+    text('Todas as notas musicais que ouvimos tem sua própria afinação. \n \n Se elevarmos essa afinação até a velocidade da luz, encontraremos as cores que acontecem em cada nota. \n \n Qualquer som emitido é constituído por outros sons que vibram junto com ele. \n Essa sequência é chamada de série harmônica.', width/2, height * 0.75, 860);
     
    // button.mousePressed(changeBG);
 
